@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import{ fa-mobile } from '@fortawesome/free-regular-svg-icons';
 import { ContactmeService } from './contactme.service';
 import {
   AbstractControl,
@@ -18,6 +19,7 @@ export class ContactmeComponent implements OnInit {
   emailIcon = faEnvelope;
   locationIcon = faLocationDot;
   sendIcon = faPaperPlane;
+  phoneIcon = fa-mobile;
 
   form: FormGroup;
   submitted = false;
